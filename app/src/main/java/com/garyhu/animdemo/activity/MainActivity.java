@@ -1,17 +1,21 @@
 package com.garyhu.animdemo.activity;
 
 import android.animation.ValueAnimator;
+import android.content.Intent;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 
 import com.garyhu.animdemo.R;
+import com.garyhu.animdemo.base.BaseActivity;
+import com.garyhu.animdemo.shopcar.ShopCarAddAnimActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private ImageView iv;
     private PathMeasure mPathMeasure;
@@ -22,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iv = ((ImageView) findViewById(R.id.ic));
+
+        //查看购物车
+        findViewById(R.id.shop_car).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ShopCarAddAnimActivity.class));
+            }
+        });
 
         Path path = new Path();
         path.moveTo(0, 0);
@@ -46,5 +58,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         valueAnimator.start();
+    }
+
+    @Override
+    public void initView() {
+
     }
 }
