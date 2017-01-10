@@ -35,6 +35,14 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        //加载图片
+        findViewById(R.id.volley).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,VolleyActivity.class));
+            }
+        });
+
         Path path = new Path();
         path.moveTo(0, 0);
         path.lineTo(getResources().getDisplayMetrics().widthPixels, getResources().getDisplayMetrics().heightPixels);

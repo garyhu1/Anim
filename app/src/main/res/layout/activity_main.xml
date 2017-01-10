@@ -22,4 +22,10 @@
         android:layout_height="wrap_content"
         android:text="购物车"
         android:layout_alignParentRight="true"/>
+    <Button
+        android:id="@+id/volley"
+        android:layout_toLeftOf="@id/shop_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="volley"/>
 </RelativeLayout>
