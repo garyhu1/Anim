@@ -19,6 +19,9 @@
         </activity>
         <activity android:name=".shopcar.ShopCarAddAnimActivity"/>
         <activity android:name=".activity.VolleyActivity"/>
+        <activity android:name=".propertyanim.ValueAnimationActivity"/>
+        <activity android:name=".propertyanim.PropertyAnimationActivity"/>
+        <activity android:name=".payanim.AliPayAnimActivity"/>
     </application>
 
 </manifest>

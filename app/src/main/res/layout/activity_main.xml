@@ -28,4 +28,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="volley"/>
+    <Button
+        android:id="@+id/ali_pay"
+        android:layout_below="@id/volley"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付动画"/>
+    <Button
+        android:id="@+id/point_anim"
+        android:layout_below="@id/volley"
+        android:layout_toLeftOf="@id/ali_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画"/>
 </RelativeLayout>

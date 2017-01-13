@@ -13,6 +13,8 @@ import android.widget.ImageView;
 
 import com.garyhu.animdemo.R;
 import com.garyhu.animdemo.base.BaseActivity;
+import com.garyhu.animdemo.payanim.AliPayAnimActivity;
+import com.garyhu.animdemo.propertyanim.ValueAnimationActivity;
 import com.garyhu.animdemo.shopcar.ShopCarAddAnimActivity;
 
 public class MainActivity extends BaseActivity {
@@ -40,6 +42,22 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,VolleyActivity.class));
+            }
+        });
+
+        //支付成功和失败的动画
+        findViewById(R.id.ali_pay).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AliPayAnimActivity.class));
+            }
+        });
+
+        //属性动画
+        findViewById(R.id.point_anim).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ValueAnimationActivity.class));
             }
         });
 
