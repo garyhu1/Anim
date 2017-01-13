@@ -22,6 +22,7 @@
         <activity android:name=".propertyanim.ValueAnimationActivity"/>
         <activity android:name=".propertyanim.PropertyAnimationActivity"/>
         <activity android:name=".payanim.AliPayAnimActivity"/>
+        <activity android:name=".activity.SuccessActivity"/>
     </application>
 
 </manifest>

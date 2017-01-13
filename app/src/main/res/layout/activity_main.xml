@@ -42,4 +42,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="属性动画"/>
+
+    <Button
+        android:id="@+id/success"
+        android:layout_below="@id/ali_pay"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义的动画"/>
+    <com.garyhu.animdemo.payanim.SuccessTickView
+        android:id="@+id/success_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/play_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="执行动画"/>
 </RelativeLayout>

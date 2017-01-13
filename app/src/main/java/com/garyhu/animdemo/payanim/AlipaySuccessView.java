@@ -85,7 +85,6 @@ public class AlipaySuccessView extends View {
                 mCenterX - mRadius / 2 + mLeftValue, mCenterY + mLeftValue, mLinePaint);
         canvas.drawLine(mCenterX, mCenterY + mRadius / 2,
                 mCenterX + mRightValue, mCenterY + mRadius / 2 - (3f / 2f) * mRightValue, mLinePaint);
-
     }
 
     @Override

@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import com.garyhu.animdemo.R;
 import com.garyhu.animdemo.base.BaseActivity;
 import com.garyhu.animdemo.payanim.AliPayAnimActivity;
+import com.garyhu.animdemo.payanim.SuccessTickView;
 import com.garyhu.animdemo.propertyanim.ValueAnimationActivity;
 import com.garyhu.animdemo.shopcar.ShopCarAddAnimActivity;
 
@@ -22,12 +23,14 @@ public class MainActivity extends BaseActivity {
     private ImageView iv;
     private PathMeasure mPathMeasure;
     private float[] mCurrentPosition = new float[2];
+    private SuccessTickView successTickView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iv = ((ImageView) findViewById(R.id.ic));
+        successTickView = (SuccessTickView) findViewById(R.id.success_view);
 
         //查看购物车
         findViewById(R.id.shop_car).setOnClickListener(new View.OnClickListener() {
@@ -58,6 +61,22 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ValueAnimationActivity.class));
+            }
+        });
+
+        //执行动画
+        findViewById(R.id.play_anim).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                successTickView.startTickAnim();
+            }
+        });
+
+        //自定义的对号动画
+        findViewById(R.id.success).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,SuccessActivity.class));
             }
         });
 

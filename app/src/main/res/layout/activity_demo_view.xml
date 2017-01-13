@@ -12,8 +12,8 @@
 
         <com.garyhu.animdemo.payanim.AlipaySuccessView
             android:id="@+id/successview"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_marginTop="15dp" />
 
@@ -30,8 +30,8 @@
 
         <com.garyhu.animdemo.payanim.AlipayFailureView
             android:id="@+id/faliureview"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center" />
 
         <Button

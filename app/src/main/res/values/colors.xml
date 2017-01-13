@@ -16,4 +16,5 @@
     <color name="cpb_green_dark">#ff6d9b00</color>
     <color name="cpb_white">@android:color/white</color>
     <color name="background">#E5E5E5</color>
+    <color name="success_stroke_color">#DA5818</color>
 </resources>
