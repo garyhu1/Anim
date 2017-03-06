@@ -61,4 +61,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="执行动画"/>
+    <Button
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="一些自定义的动画"/>
 </RelativeLayout>

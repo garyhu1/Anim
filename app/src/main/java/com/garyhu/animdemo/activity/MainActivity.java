@@ -72,6 +72,14 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        //Vector矢量动画
+        findViewById(R.id.second).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,VectorActivity.class));
+            }
+        });
+
         //自定义的对号动画
         findViewById(R.id.success).setOnClickListener(new View.OnClickListener() {
             @Override
